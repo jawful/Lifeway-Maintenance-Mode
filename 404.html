@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#123b4a">
+  <title>メンテナンス中 | Lifeway English</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #123b4a;
+      --muted: #526872;
+      --orange: #f6a01a;
+      --paper: #ffffff;
+      --wash: #eef5f6;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--wash); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP",
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgb(246 160 26 / 18%), transparent 24rem),
+        linear-gradient(145deg, #f8fbfb, #e8f1f3);
+    }
+    main {
+      width: min(43rem, 100%);
+      overflow: hidden;
+      border: 1px solid rgb(18 59 74 / 10%);
+      border-radius: 1.4rem;
+      background: var(--paper);
+      box-shadow: 0 1.5rem 4rem rgb(18 59 74 / 14%);
+    }
+    header {
+      display: grid;
+      place-items: center;
+      min-height: 10rem;
+      padding: 1.5rem 2rem;
+      background: var(--ink);
+    }
+    .logo {
+      display: block;
+      width: min(22rem, 88%);
+      height: auto;
+    }
+    .content {
+      padding: clamp(2rem, 7vw, 3.5rem);
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: #9a6104;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 6vw, 2.65rem);
+      line-height: 1.3;
+      letter-spacing: .02em;
+    }
+    .lead {
+      margin: 1.25rem auto 0;
+      max-width: 34rem;
+      font-size: clamp(1rem, 3.2vw, 1.12rem);
+      line-height: 1.9;
+    }
+    .divider {
+      width: 3rem;
+      height: .22rem;
+      margin: 2rem auto;
+      border: 0;
+      border-radius: 999px;
+      background: var(--orange);
+    }
+    .english {
+      margin: 0 auto;
+      max-width: 34rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .note {
+      margin: 1.7rem 0 0;
+      padding: 1rem 1.2rem;
+      border-radius: .8rem;
+      background: #fff7e8;
+      color: #65430d;
+      font-size: .92rem;
+      line-height: 1.7;
+    }
+    footer {
+      padding: 1rem 2rem 1.4rem;
+      color: #71838a;
+      font-size: .78rem;
+      text-align: center;
+    }
+    @media (max-width: 32rem) {
+      header { min-height: 8rem; }
+      .content { padding: 2rem 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="logo" src="assets/lifeway-logo.png" alt="Lifeway English">
+    </header>
+    <section class="content" aria-labelledby="maintenance-title">
+      <p class="eyebrow">Scheduled Maintenance</p>
+      <h1 id="maintenance-title">ただいまメンテナンス中です</h1>
+      <p class="lead">
+        より安全で安定したサービスをご提供するため、サーバーメンテナンスを実施しています。
+        恐れ入りますが、しばらくしてからもう一度お試しください。
+      </p>
+      <p class="note">
+        Lifeway宛のメールは到着が遅れる場合があります。送信済みの場合、再送していただく必要はありません。
+      </p>
+      <hr class="divider">
+      <p class="english" lang="en">
+        Lifeway services are temporarily unavailable while scheduled server maintenance is completed.
+        Please try again later. Messages sent to Lifeway may be delayed, but there is no need to resend them.
+      </p>
+    </section>
+    <footer>Lifeway English</footer>
+  </main>
+</body>
+</html>
